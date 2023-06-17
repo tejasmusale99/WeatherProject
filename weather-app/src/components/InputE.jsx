@@ -23,25 +23,32 @@ function InputE() {
   }
   return (
     <>
-      <input
-        type="text"
-        placeholder="Enter City Name"
-        onChange={inputChangeHandler}
-      />
+      <div className="input">
+        <input
+          type="text"
+          placeholder="Enter City Name"
+          onChange={inputChangeHandler}
+          className="input_area"
+        />
+      </div>
 
-      {!data ?(
+      {!data ? (
         <p>No Data Found </p>
-      ):(
+      ) : (
         <>
-        <div className="city-name">
-        <h1>{inputValue}</h1>
-      </div>
-      <div className="Temp">
-        <Temp temp={data.temp} tempMin={data.temp_min} tempMax={data.temp_max}/>
-      </div>
-</>
+          <div className="city-name">
+          <i className="fa-solid fa-street-view fa-fade street_logo " ></i>
+            <h1 className="city_heading">{inputValue}</h1>
+          </div>  
+          <div className="Temp">
+            <Temp
+              temp={data.temp}
+              tempMin={data.temp_min}
+              tempMax={data.temp_max}
+            />
+          </div>
+        </>
       )}
-
     </>
   );
 }

@@ -3,3 +3,74 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1615715325974-aaa65b23fdf8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlnaHQlMjBibHVlfGVufDB8fDB8fHww&auto=format&fit=crop&w=2000&q=60");
+  background-repeat: no-repeat;
+}
+
+
+.main_container{
+  background: url("https://images.unsplash.com/photo-1548266652-99cf27701ced?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80");
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px 2px rgb(188, 174, 174);
+}
+/* .mini_container{
+  text-align: center;
+} */
+.input_area{
+  text-align: center;
+  padding: 12px; 
+  outline: none;
+ border-radius: 20px;
+  font-size: 15px; 
+}
+.input{
+  text-align: center;
+  padding-top: 30px;
+}
+.fa-solid{
+color: aliceblue;
+font-size: 25px;
+padding: 10px;
+display: inline;
+}
+.street_logo{
+  font-size: 50px;
+}
+.city-name{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.city_heading{
+  padding-top: 20px;
+}
+.temp
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 68px;
+}
+.min_temp{
+  color: rgb(65, 60, 60);
+}
+.date_time{
+  position: relative;
+  top: 146px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  left: 10px;
+  border: none;
+  outline: none;
+  color: rgb(86, 83, 83);
+}
+

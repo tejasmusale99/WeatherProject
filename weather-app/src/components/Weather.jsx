@@ -5,13 +5,13 @@ import LiveDateTimeComponentte from "./Date";
 function Weather() {
   return (
     <>
-    <div className="container">
-      <div className="weather">
+      <div className="main_container">
+        <div>
         <InputE />
-      </div>
-      <div className="Date Time">
-        <LiveDateTimeComponentte />
-      </div>
+        <div className="Date-Time">
+          <LiveDateTimeComponentte />
+        </div>
+        </div>
       </div>
     </>
   );

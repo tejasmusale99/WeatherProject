@@ -4,16 +4,21 @@ const LiveDateTimeComponent = () => {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
   useEffect(() => {
-    setTimeout(() => {
+    const interval=setTimeout(() => {
       setCurrentDateTime(new Date());
     }, 1000);
+    return () => {
+        clearInterval(interval);
+      };
   }, [currentDateTime]);
 
   return (
-    <div>
+    <>
+    <div className="date_time">
       <p> {currentDateTime.toLocaleDateString()}</p>
       <p> {currentDateTime.toLocaleTimeString()}</p>
     </div>
+    </>
   );
 };
 
