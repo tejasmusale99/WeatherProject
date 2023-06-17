@@ -1,18 +1,19 @@
-import React from 'react'
-import InputE from "./InputE"
-import Temp from './Temp';
+import React from "react";
+import InputE from "./InputE";
+import LiveDateTimeComponentte from "./Date";
 
-function Weather(){
-    return(
-        <div className='container'>
-            <InputE />
-            <div className='city-name'>
-                <h1>Pune</h1>
-            </div>
-            <div className='Temp'>
-            <Temp />
-            </div>
-        </div>
-    )
+function Weather() {
+  return (
+    <>
+    <div className="container">
+      <div className="weather">
+        <InputE />
+      </div>
+      <div className="Date Time">
+        <LiveDateTimeComponentte />
+      </div>
+      </div>
+    </>
+  );
 }
 export default Weather;

@@ -1,9 +1,12 @@
 import React from "react";
-function Temp() {
+
+function Temp(props) {
   return (
     <>
-      <p>5.25 cel</p>
-      <p>Min:n5.25 cel | Max: 5.25 cel</p>
+      <p>{props.temp}</p>
+      <p>
+        Min:{props.tempMin} cel | Max: {props.tempMax} cel
+      </p>
     </>
   );
 }
